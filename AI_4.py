@@ -48,5 +48,5 @@ def printSolutions(boards):
 # main
 
 if __name__ == "__main__":
-    boards = solveNQueens(8)
+    boards = solveNQueens(4)
     printSolutions(boards)
