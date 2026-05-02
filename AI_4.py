@@ -38,11 +38,13 @@ def solveNQueens(n):
 
 
 def printSolutions(boards):
-    for i, board in enumerate(boards):
-        print(f"Solution {i+1}:")
+    i = 1
+    for board in boards:
+        print(f"Solution {i}:")
         for row in board:
             print(' '.join(row))
         print()
+        i += 1
 
 
 # main
