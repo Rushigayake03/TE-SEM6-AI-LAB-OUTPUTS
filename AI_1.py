@@ -26,17 +26,19 @@ def bfs(visited, graph, node, queue):
 
 
 def main():
-    visited1 = set()  # TO keep track of DFS visited nodes
-    visited2 = set()  # TO keep track of BFS visited nodes
+    visited1 = set()  # To keep track of DFS visited nodes
+    visited2 = set()  # To keep track of BFS visited nodes
     queue = []  # For BFS
+
     n = int(input("Enter number of nodes : "))
     graph = dict()
 
     for i in range(1, n + 1):
-        edges = int(input("Enter number of edges for node {} : ".format(i)))
+        edges = int(input(f"Enter number of edges for node {i} : "))
         graph[i] = list()
+
         for j in range(1, edges + 1):
-            node = int(input("Enter edge {} for node {} : ".format(j, i)))
+            node = int(input(f"Enter edge {j} for node {i} : "))
             graph[i].append(node)
 
     print("DFS: ", end="")

@@ -1,4 +1,4 @@
-3 # N-Queens Problem Solver with Backtracking and branch and bound approach 
+# N-Queens Problem Solver with Backtracking and branch and bound approach 
 
 def solveNQueens(n):
     col = set()        # stores used columns
